@@ -10,6 +10,11 @@ def circle_mask(im, xc, yc, rcirc):
     return circ.astype('float')
 
 
+def hi():
+    '''say hi'''
+    print('hello world')
+
+
 def ft2d(func):
     ft = np.fft.fftshift(np.fft.fft2(np.fft.ifftshift(func)))
     return ft
