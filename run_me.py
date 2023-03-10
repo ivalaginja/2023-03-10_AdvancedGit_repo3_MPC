@@ -2,6 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+def badfunction()
+    return 
+
 def circle_mask(im, xc, yc, rcirc):
     """Create a circular aperture centered on (xc, yc) with radius rcirc."""
     x, y = np.shape(im)
