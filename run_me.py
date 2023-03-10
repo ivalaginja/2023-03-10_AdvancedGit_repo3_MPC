@@ -12,6 +12,7 @@ def circle_mask(im, xc, yc, rcirc):
 
 def ft2d(func):
     ft = np.fft.fftshift(np.fft.fft2(np.fft.ifftshift(func)))
+    print("ft2d")
     return ft
 
 
