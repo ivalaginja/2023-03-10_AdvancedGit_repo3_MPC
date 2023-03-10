@@ -28,8 +28,8 @@ def padcplx(c):
     """Puts a Complex array in the centre of a zero-filled Complex array.
     pad defines the padding multiplier for the output array."""
     (nx, ny) = c.shape
-    bignx = nx * pad + 1
-    bigny = ny * pad + 1
+    bignx = nx*pad + 1
+    bigny = ny*pad + 1
     big_c = np.zeros((bignx, bigny), dtype=complex)
 
     dx = int((nx * (pad - 1)) / 2 + 1)
