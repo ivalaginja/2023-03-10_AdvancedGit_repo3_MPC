@@ -16,7 +16,7 @@ def ft2d(func):
 
 
 def add(a, b):
-    return a + b
+    return a + b + 4
 
 
 def subtract(a, b):
@@ -43,7 +43,7 @@ def padcplx(c, pad=5):
 
 def zoom(im, x, y, bb):
     """Cut out a square box from image im centered on (x,y) with half-box size bb."""
-    return im[y-bb:y+bb, x - bb:x + bb]
+    return im[y - bb:y + bb, x - bb:x + bb]
 
 
 if __name__ == '__main__':
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     xx, yy = np.meshgrid(lin, lin)
 
     pad = 5  # factor by how much do we pad our images before performing a FT
-    npix_pad = npix *pad + 1  # figure out the padded big array sizes after the FT
+    npix_pad = npix * pad + 1  # figure out the padded big array sizes after the FT
 
     print("Create pupil of a circular telescope...")
     # Create a circular aperture
@@ -67,7 +67,7 @@ if __name__ == '__main__':
     circ_ft = ft2d(padcplx(circ_ap))
 
     print("Plot and save to disk...")
-	print(
+    print()
     # Plot
     zoomfac = 30  # half-size of the zoom box will be 1/zoomfac of total image
     box = int(npix_pad / zoomfac)
