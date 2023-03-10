@@ -22,8 +22,9 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
+
 def new_func():
-Tata
+    return Tata
 
 
 def padcplx(c, pad=5):
