@@ -16,7 +16,7 @@ def ft2d(func):
 
 
 def add(a, b):
-    return a + b + 4
+    return a + b
 
 
 def subtract(a, b):
