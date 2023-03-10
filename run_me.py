@@ -16,11 +16,15 @@ def ft2d(func):
 
 
 def add(a, b):
-    return a + b
+    return a + b + 4
 
 
 def subtract(a, b):
     return a - b
+
+
+def new_func():
+    return Tata
 
 
 def padcplx(c, pad=5):
@@ -64,6 +68,7 @@ if __name__ == '__main__':
     circ_ft = ft2d(padcplx(circ_ap))
 
     print("Plot and save to disk...")
+    print()
     # Plot
     zoomfac = 30  # half-size of the zoom box will be 1/zoomfac of total image
     box = int(npix_pad / zoomfac)
