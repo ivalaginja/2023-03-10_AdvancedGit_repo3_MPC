@@ -22,6 +22,8 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
+def try_for_testing(a, b):
+    return a+b
 
 def padcplx(c, pad=5):
     """Puts a Complex array in the centre of a zero-filled Complex array.
